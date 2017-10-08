@@ -3,16 +3,13 @@
     <div class="media">
       <div class="media-left">
         <a href="#">
-          <i class="fa fa-question-circle fa-5x" aria-hidden="true"></i>
+          <img class="media-object" src="<%= @question.gravatar %>">
         </a>
       </div>
 
       <div class="media-body">
-        <h4 class="media-heading">user@email.com asked:</h4>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-          eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-          eget, arcu. In enim justo, rhoncus ut, </p>
+        <h4 class="media-heading"><%= @question.email %> asked:</h4>
+        <%= @question.body %>
       </div>
     </div>
   </div>

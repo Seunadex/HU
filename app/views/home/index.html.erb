@@ -16,9 +16,7 @@
       <h5 class="media-heading"><%= q.email %> asked:</h5>
       <%= q.body %>
       <div><%= time_ago_in_words q.created_at %> ago</div>
-        <div>
-            <a href="/questions/10" class="btn btn-success btn-sm">View Answers</a>
-          </div>
+            <%= link_to 'View Answers', question_path(q), class: 'btn btn-success btn-sm' %>
   </div>
 </div>
   <% end %>
